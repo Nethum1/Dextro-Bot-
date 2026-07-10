@@ -37,3 +37,18 @@
 | **State Machine** | Line-follow → color-stop → lost-line → finish transitions |
 
 ---
+
+## 🔧 Hardware Components
+
+| # | Component | Purpose | Notes |
+|---|---|---|---|
+| 1 | ESP32 WROOM-32 | Main controller | 3.3V logic, dual-core |
+| 2 | L298N Motor Driver | Drive 2× DC motors | Dual H-bridge, 2A/ch |
+| 3 | MPU6050 | 6-axis IMU (gyro + accel) | I2C address 0x68 |
+| 4 | TCS34725 | RGB color sensor | I2C address 0x29 |
+| 5 | 8-bit IR Sensor Array | Line detection | TCRT5000-based, digital out |
+| 6 | 2× Encoder DC Motors | Locomotion + feedback | Quadrature or single-channel |
+| 7 | LM2596 Buck Converter | 7.4V → 5V regulated | Adjust pot to exactly 5.0V |
+| 8 | 0.96" SPI OLED (SSD1306) | Live status display | 128×64 px, 3.3V |
+| 9 | 7.4V 2S LiPo Battery | Power source | 1500–2200mAh recommended |
+
