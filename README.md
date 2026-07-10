@@ -21,3 +21,19 @@
 - [Competition Tips](#-competition-tips)
 
 ---
+
+
+## ✨ Features
+
+| Feature | Detail |
+|---|---|
+| **Line Following** | 8-sensor IR array with weighted centroid position detection |
+| **PID Control** | Tunable KP, KI, KD with anti-windup integral clamping |
+| **Gyro Stabilization** | MPU6050 Z-axis yaw rate correction on straight sections |
+| **Color Detection** | TCS34725 RGBC sensor with real-time classification |
+| **Encoder Feedback** | Hardware interrupt-driven pulse counting on both motors |
+| **OLED Display** | Live status: state, IR bitmap, position, speed bars, color, encoders |
+| **Motor PWM** | ESP32 LEDC hardware PWM at 20kHz (silent operation) |
+| **State Machine** | Line-follow → color-stop → lost-line → finish transitions |
+
+---
