@@ -69,3 +69,4 @@
 
 ## 📌 Pin Mapping
 
+### Motor Driver (L298N)
