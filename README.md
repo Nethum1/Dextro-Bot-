@@ -67,3 +67,5 @@
 
 ---
 
+## 📌 Pin Mapping
+
