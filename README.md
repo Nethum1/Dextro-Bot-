@@ -52,3 +52,18 @@
 | 8 | 0.96" SPI OLED (SSD1306) | Live status display | 128×64 px, 3.3V |
 | 9 | 7.4V 2S LiPo Battery | Power source | 1500–2200mAh recommended |
 
+### Additional Components Required
+
+| Component | Value | Qty | Purpose |
+|---|---|---|---|
+| Resistor | 4.7kΩ | 2 | I2C pull-ups (SDA + SCL) |
+| Resistor | 10kΩ | 8 | IR sensor output pull-downs |
+| Capacitor (electrolytic) | 100µF | 1 | ESP32 VIN decoupling |
+| Capacitor (ceramic) | 100nF | 2 | 3.3V rail high-freq bypass |
+| Diode | 1N4007 | 1 | Reverse polarity protection on LiPo |
+| Slide Switch | — | 1 | Main power on/off |
+| Connector | XT30 or XT60 | 1 | LiPo battery connector |
+| USB-TTL Adapter | CH340 / CP2102 | 1 | Programming (if no onboard USB) |
+
+---
+
