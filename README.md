@@ -70,3 +70,15 @@
 ## 📌 Pin Mapping
 
 ### Motor Driver (L298N)
+
+| L298N Pin | ESP32 GPIO | Function |
+|---|---|---|
+| IN1 | GPIO25 | Left motor forward |
+| IN2 | GPIO26 | Left motor backward |
+| IN3 | GPIO27 | Right motor forward |
+| IN4 | GPIO14 | Right motor backward |
+| ENA | GPIO32 | Left speed PWM |
+| ENB | GPIO33 | Right speed PWM |
+| VSS | 5V rail | Logic supply |
+| VS | 7.4V direct | Motor supply |
+| GND | Common GND | Ground |
