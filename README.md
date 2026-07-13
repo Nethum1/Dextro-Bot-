@@ -82,3 +82,16 @@
 | VSS | 5V rail | Logic supply |
 | VS | 7.4V direct | Motor supply |
 | GND | Common GND | Ground |
+
+### 8-bit IR Sensor Array
+
+| Sensor | ESP32 GPIO | Position |
+|---|---|---|
+| S1 | GPIO13 | Far left |
+| S2 | GPIO12 | Left |
+| S3 | GPIO4 ⚠ | Left-center |
+| S4 | GPIO2 | Center-left |
+| S5 | GPIO15 | Center-right |
+| S6 | GPIO0 ⚠ | Right-center |
+| S7 | GPIO16 | Right |
+| S8 | GPIO17 | Far right |
