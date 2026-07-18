@@ -95,3 +95,5 @@
 | S6 | GPIO0 ⚠ | Right-center |
 | S7 | GPIO16 | Right |
 | S8 | GPIO17 | Far right |
+
+> ⚠ **GPIO0** is also the ESP32 boot pin. A 10kΩ pull-up to 3.3V on GPIO0 is **required** so the ESP32 doesn't enter bootloader mode if the IR line is active during power-on.
