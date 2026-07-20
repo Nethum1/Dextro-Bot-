@@ -111,3 +111,10 @@
 | RST | GPIO4 | Reset (or tie to 3.3V via 10kΩ) |
 | VCC | 3.3V | Power |
 | GND | GND | Ground |
+
+### I2C Sensors (Shared Bus)
+
+| Sensor | SDA | SCL | Address | VCC |
+|---|---|---|---|---|
+| MPU6050 | GPIO21 | GPIO22 | 0x68 | 3.3V |
+| TCS34725 | GPIO21 | GPIO22 | 0x29 | 3.3V |
