@@ -118,3 +118,5 @@
 |---|---|---|---|---|
 | MPU6050 | GPIO21 | GPIO22 | 0x68 | 3.3V |
 | TCS34725 | GPIO21 | GPIO22 | 0x29 | 3.3V |
+
+> Add **one pair of 4.7kΩ pull-up resistors** from SDA→3.3V and SCL→3.3V. Do not add them on each sensor separately.
