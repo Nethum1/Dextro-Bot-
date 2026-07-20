@@ -99,3 +99,15 @@
 > ⚠ **GPIO0** is also the ESP32 boot pin. A 10kΩ pull-up to 3.3V on GPIO0 is **required** so the ESP32 doesn't enter bootloader mode if the IR line is active during power-on.
 >
 > ⚠ **GPIO4** is shared with OLED RST. If OLED RST is wired to GPIO4, tie OLED RST to 3.3V via 10kΩ instead and set `OLED_RST = -1` in the code.
+
+### OLED Display (SPI — SSD1306)
+
+| OLED Pin | ESP32 GPIO | SPI Function |
+|---|---|---|
+| CLK / SCL | GPIO18 | SPI Clock (VSPI SCK) |
+| DIN / SDA / MOSI | GPIO23 | SPI Data (VSPI MOSI) |
+| CS | GPIO5 | Chip Select |
+| DC | GPIO19 | Data / Command select |
+| RST | GPIO4 | Reset (or tie to 3.3V via 10kΩ) |
+| VCC | 3.3V | Power |
+| GND | GND | Ground |
