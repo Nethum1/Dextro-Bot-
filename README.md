@@ -120,3 +120,12 @@
 | TCS34725 | GPIO21 | GPIO22 | 0x29 | 3.3V |
 
 > Add **one pair of 4.7kΩ pull-up resistors** from SDA→3.3V and SCL→3.3V. Do not add them on each sensor separately.
+
+### Encoder Motors
+
+| Signal | Left Motor | Right Motor |
+|---|---|---|
+| Encoder A | GPIO34 | GPIO35 |
+| Encoder B | GPIO36 | GPIO39 |
+| VCC | 3.3V | 3.3V |
+| GND | GND | GND |
