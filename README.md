@@ -129,3 +129,5 @@
 | Encoder B | GPIO36 | GPIO39 |
 | VCC | 3.3V | 3.3V |
 | GND | GND | GND |
+
+> GPIO34, 35, 36, 39 are **input-only** pins on ESP32 — they have no internal pull-up/down and cannot be driven as output. This makes them ideal for encoder inputs.
