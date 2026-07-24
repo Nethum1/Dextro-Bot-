@@ -135,3 +135,31 @@
 ---
 
 ## 🔌 Wiring Guide
+
+### Power Distribution
+
+```
+7.4V LiPo
+    │
+    ├── 1N4007 (protection) ──► Slide Switch
+    │                                │
+    │                    ┌───────────┴────────────────┐
+    │                    │                            │
+    │               LM2596 Buck                  L298N (VS)
+    │               7.4V → 5V                  Motor Power
+    │                    │
+    │              5V Regulated Rail
+    │                    │
+    │         ┌──────────┼──────────────┐
+    │         │          │              │
+    │      ESP32        L298N        IR Array
+    │      VIN(5V)      VSS(5V)      VCC(5V)
+    │
+    │         ESP32 3.3V out
+    │                    │
+    │      ┌─────────────┼──────────┐
+    │      │             │          │
+    │   MPU6050       TCS34725   Encoders
+    │   OLED VCC      3.3V       VCC(3.3V)
+```
+
