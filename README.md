@@ -163,3 +163,14 @@
     │   OLED VCC      3.3V       VCC(3.3V)
 ```
 
+### I2C Bus Wiring
+
+```
+ESP32 GPIO21 (SDA) ──┬──── MPU6050 SDA
+                     ├──── TCS34725 SDA
+                     └──── 4.7kΩ ──► 3.3V
+
+ESP32 GPIO22 (SCL) ──┬──── MPU6050 SCL
+                     ├──── TCS34725 SCL
+                     └──── 4.7kΩ ──► 3.3V
+```
