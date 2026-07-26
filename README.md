@@ -174,3 +174,12 @@ ESP32 GPIO22 (SCL) ──┬──── MPU6050 SCL
                      ├──── TCS34725 SCL
                      └──── 4.7kΩ ──► 3.3V
 ```
+
+### L298N Important Notes
+
+- **Remove** the onboard 5V-EN jumper. This jumper connects the motor supply directly to the logic supply — dangerous at 7.4V.
+- Connect **VSS to 5V** (from LM2596) and **VS to 7.4V** (direct from LiPo).
+- The onboard L298N heatsink gets hot at full load — add a small fan or ensure airflow.
+- Place a **100µF capacitor** across the motor terminals to suppress back-EMF noise.
+
+---
