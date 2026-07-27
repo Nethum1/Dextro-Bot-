@@ -183,3 +183,19 @@ ESP32 GPIO22 (SCL) ──┬──── MPU6050 SCL
 - Place a **100µF capacitor** across the motor terminals to suppress back-EMF noise.
 
 ---
+## 💻 Software Setup
+
+### 1. Install Arduino IDE
+
+Download from [arduino.cc/en/software](https://www.arduino.cc/en/software) (v2.x recommended).
+
+### 2. Add ESP32 Board Support
+
+In Arduino IDE → **File → Preferences → Additional Board Manager URLs**, add:
+
+```
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+
+Then go to **Tools → Board → Board Manager**, search `esp32` and install **esp32 by Espressif Systems**.
+
