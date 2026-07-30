@@ -201,4 +201,17 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 ```
 
 Then go to **Tools → Board → Board Manager**, search `esp32` and install **esp32 by Espressif Systems**.
+---
+
+### 4. Install Libraries
+
+Go to **Tools → Manage Libraries** and install:
+
+| Library | Author | Version |
+|---|---|---|
+| Adafruit MPU6050 | Adafruit | ≥ 2.2.4 |
+| Adafruit TCS34725 | Adafruit | ≥ 1.4.2 |
+| Adafruit SSD1306 | Adafruit | ≥ 2.5.7 |
+| Adafruit GFX Library | Adafruit | ≥ 1.11.5 |
+| Adafruit Unified Sensor | Adafruit | ≥ 1.1.9 |
 
