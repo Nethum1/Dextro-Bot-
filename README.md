@@ -215,3 +215,20 @@ Go to **Tools → Manage Libraries** and install:
 | Adafruit GFX Library | Adafruit | ≥ 1.11.5 |
 | Adafruit Unified Sensor | Adafruit | ≥ 1.1.9 |
 
+---
+
+## 📚 Library Dependencies
+
+```
+esp32_robot_oled.ino
+ ├── Wire.h             (built-in — I2C for MPU6050 + TCS34725)
+ ├── SPI.h              (built-in — SPI for OLED)
+ ├── Adafruit_GFX.h     (graphics primitives for OLED)
+ ├── Adafruit_SSD1306.h (SSD1306 OLED driver)
+ ├── Adafruit_MPU6050.h (MPU6050 IMU driver)
+ ├── Adafruit_Sensor.h  (Adafruit unified sensor abstraction)
+ └── Adafruit_TCS34725.h (TCS34725 color sensor driver)
+```
+
+---
+
