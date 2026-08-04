@@ -231,4 +231,13 @@ esp32_robot_oled.ino
 ```
 
 ---
+## 🎛️ PID Tuning Guide
+
+The robot uses a classic **PID controller** where the error is the line position (-3.5 = far left, 0 = centered, +3.5 = far right).
+
+```
+Correction = KP × error + KI × integral + KD × derivative
+Left speed  = BASE_SPEED - correction
+Right speed = BASE_SPEED + correction
+```
 
